@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "40484938564",
+    "project_id": "vrm-by-qirtas-marketing",
+    "storage_bucket": "vrm-by-qirtas-marketing.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40484938564:android:66a5fec83107b3e1856d11",
+        "android_client_info": {
+          "package_name": "com.example.vrmbyqirtas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK5Rl05jFnrTZ39jjz2YAxKSBbLy0kysw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

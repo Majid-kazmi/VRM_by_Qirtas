@@ -1,0 +1,16 @@
+<resources>
+    <!-- App Theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <!-- RTL Languages Theme -->
+    <style name="RTLTextStyle">
+        <item name="android:fontFamily">@font/jameel_noori_nastaleeq</item>
+    </style>
+
+    <!-- LTR Languages Theme -->
+    <style name="LTRTextStyle">
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+</resources>

@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <!--  VRM Header Code  -->
+        <FrameLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <!--        background image-->
+            <!--        overlay linear layout for stats-->
+            <ImageView
+                android:id="@+id/topbanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/top_banner_description"
+                android:scaleType="fitXY"
+                android:src="@drawable/topbg" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="0dp"
+                >
+
+                <TextView
+                    android:id="@+id/today_dera_visit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jameel_noori_nastaleeq"
+                    android:text="@string/today_dera_visit"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/dera_visit_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/dera_visit_count"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/total_dera_visit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jameel_noori_nastaleeq"
+                    android:text="@string/total_dera_visit"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/total_dera_visit_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/total_dera_visit_count"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/total_voter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jameel_noori_nastaleeq"
+                    android:text="@string/total_voter"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/total_voter_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/total_voter_count"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/add_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jameel_noori_nastaleeq"
+                    android:text="@string/add_new"
+                    android:textColor="#fff"
+                    android:textSize="26sp"
+                    />
+
+            </LinearLayout>
+            <!--        overlay linear layout for stats end-->
+
+
+            <!--        vrm name , photo, name start-->
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:padding="0dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/vrm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingBottom="0dp"
+                    android:text="@string/app_log"
+                    android:textColor="#fff"
+                    android:textSize="48sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/Voter_Relationship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="top"
+                    android:includeFontPadding="false"
+                    android:paddingTop="0dp"
+                    android:text="@string/voter_relationship"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/Management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_light"
+                    android:letterSpacing="0.24"
+                    android:text="@string/management"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:includeFontPadding="false"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/nawzish_dp"
+                        android:contentDescription="@string/member_dp"
+                        />
+
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/member_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jameel_noori_nastaleeq"
+                    android:text="@string/member_name"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+            <!--        vrm name , photo, name end-->
+
+
+        </FrameLayout>
+
+        <!--  VRM Header Code end -->
+
+        <!-- 2️⃣ Grid Layout Section (6 Boxes) -->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <!-- box 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/icon_pending_req"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="4dp">
+                android:layout_rowWeight="1"
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ImageView
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/pending_req"
+                        android:src="@drawable/vrm_icon_pending_req"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jameel_noori_nastaleeq"
+                        android:text="@string/pending_req"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--box 2-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/today_req"
+
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="4dp">
+                android:layout_rowWeight="1"
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/today_req"
+                        android:src="@drawable/vrm_icon_today_req"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jameel_noori_nastaleeq"
+                        android:text="@string/today_req"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--box 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/solved_req"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="4dp"
+                android:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/solved_req"
+                        android:src="@drawable/vrm_icon_solved_req"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jameel_noori_nastaleeq"
+                        android:text="@string/solved_req"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <!-- box 4-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/voter_list"
+
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="4dp"
+                android:layout_rowWeight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/voter_list"
+                        android:src="@drawable/vrm_icon_voter_list"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jameel_noori_nastaleeq"
+                        android:text="@string/voter_list"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--box 5-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sepical_voter"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="4dp"
+                android:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ImageView
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/sep_voter"
+                        android:src="@drawable/vrm_icon_sepical_voter"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jameel_noori_nastaleeq"
+                        android:text="@string/sep_voter"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--box 6-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="4dp"
+                android:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/uC"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/uC"
+                        android:src="@drawable/vrm_icon_uc"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jameel_noori_nastaleeq"
+                        android:text="@string/uC"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <!-- box 1-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/new_voter"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="4dp"
+                android:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/pending_req"
+                        android:src="@drawable/vrm_icon_new_voter"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jameel_noori_nastaleeq"
+                        android:text="@string/new_voter"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--box 2-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/events_shedule"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="4dp"
+                android:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ImageView
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/events_shedule"
+                        android:src="@drawable/vrm_icon_events"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jameel_noori_nastaleeq"
+                        android:text="@string/events_shedule"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--box 2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dera_visit"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="4dp"
+                android:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/dera_visit"
+                        android:src="@drawable/vrm_icon_dera_visit"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jameel_noori_nastaleeq"
+                        android:text="@string/dera_visit"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--box 2-->
+            <!--box 2-->
+            <!--box 2-->
+            <!--box 2-->
+            <!--box 2-->
+            <!--box 2-->
+        </GridLayout>
+        <!-- 2️⃣ Grid Layout Section (6 Boxes) End -->
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

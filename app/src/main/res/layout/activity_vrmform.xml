@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vrmform">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_gravity="center">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ووٹر فارم"
+    android:textSize="32sp"
+    android:fontFamily="@font/jameel_noori_nastaleeq"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:hint="نام درج کریں"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp"
+                android:fontFamily="@font/jameel_noori_nastaleeq"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/etFatherName"
+                android:hint="والد کا نام"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp"
+                android:fontFamily="@font/jameel_noori_nastaleeq"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/etCNIC"
+                android:hint="شناختی کارڈ نمبر"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp"
+                android:fontFamily="@font/jameel_noori_nastaleeq"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:hint="پتہ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp"
+                android:fontFamily="@font/jameel_noori_nastaleeq"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_corner"
+                android:fontFamily="@font/jameel_noori_nastaleeq"
+                android:gravity="right"
+                android:hint="موبائل نمبر"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:textDirection="rtl" />
+
+            <EditText
+                android:id="@+id/etIlaqa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_corner"
+                android:fontFamily="@font/jameel_noori_nastaleeq"
+                android:hint="علاقہ"
+                android:inputType="text"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/etUc"
+                android:hint="یونین کونسل"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp"
+                android:fontFamily="@font/jameel_noori_nastaleeq"
+                android:layout_marginTop="5dp"/>
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <CheckBox
+                android:id="@+id/chkSpecialVoter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jameel_noori_nastaleeq"
+                android:padding="8dp"
+                android:text="خاص ووٹر؟" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:text="جمع کریں"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/app_red"
+                android:padding="8dp"
+                android:fontFamily="@font/jameel_noori_nastaleeq"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

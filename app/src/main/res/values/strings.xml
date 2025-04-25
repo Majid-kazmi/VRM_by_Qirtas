@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">VRM by Qirtas</string>
+    <string name="today_dera_visit">آج ڈیرہ وزٹ کی تعداد</string>
+    <string name="total_dera_visit">ابھی تک کی تعداد</string>
+
+    <string name="total_voter">ٹوٹل رجسٹر ووٹر</string>
+    <string name="add_new">شامل کریں</string>
+    <string name="app_log">VRM</string>
+    <string name="top_banner_description">top banner</string>
+    <string name="dera_visit_count">20</string>
+    <string name="total_dera_visit_count">266</string>
+    <string name="total_voter_count">22.6k</string>
+    <string name="voter_relationship"> Voter Relationship</string>
+    <string name="management">Management</string>
+    <string name="member_dp">Member DP</string>
+    <string name="member_name">محمد نوازش علی خان</string>
+    <!--box Names-->
+    <string name="pending_req">زیرِالتوا درخواستیں</string>
+    <string name="today_req">آج کی درخواستیں</string>
+    <string name="solved_req">حل شدہ درخواستیں</string>
+    <string name="uC">یونین کونسلز</string>
+    <string name="sep_voter">خاص ووٹر</string>
+    <string name="voter_list">ووٹر لسٹ</string>
+    <string name="dera_visit">ڈیرہ وزٹ</string>
+    <string name="events_shedule">ایونٹس اور شیڈول </string>
+    <string name="new_voter">نئے ہم سفر</string>
+    <string name="please_fill_all_fields"> براہ کرم تمام ضروری فیلڈز پر کریں</string>
+    <string name="qrts">By Qirtas Marketing</string>
+
+
+
+</resources>
